@@ -13,22 +13,6 @@ import {
 } from "@/components/ui/drawer";
 import { ref } from "vue";
 
-const data = [
-  { goal: 400 },
-  { goal: 300 },
-  { goal: 200 },
-  { goal: 300 },
-  { goal: 200 },
-  { goal: 278 },
-  { goal: 189 },
-  { goal: 239 },
-  { goal: 300 },
-  { goal: 200 },
-  { goal: 278 },
-  { goal: 189 },
-  { goal: 349 },
-];
-
 const goal = ref(350);
 </script>
 
@@ -73,21 +57,6 @@ const goal = ref(350);
               <Plus />
               <span class="sr-only">Increase</span>
             </Button>
-          </div>
-          <div class="mt-3 h-[120px]">
-            <!-- <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={data}>
-                  <Bar
-                    dataKey="goal"
-                    style={
-                      {
-                        fill: "hsl(var(--foreground))",
-                        opacity: 0.9,
-                      } as React.CSSProperties
-                    }
-                  />
-                </BarChart>
-              </ResponsiveContainer> -->
           </div>
         </div>
         <DrawerFooter>
