@@ -74,7 +74,7 @@ const models = [
   },
 ];
 
-const modelId = ref<string>(models[0].id);
+const modelId = ref<string>(models[0]!.id);
 const modelSelectorOpen = ref(false);
 const status = ref<"submitted" | "streaming" | "ready" | "error">("ready");
 const selectedModelData = computed(() =>
