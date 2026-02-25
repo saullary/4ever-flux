@@ -71,7 +71,7 @@ const data = {
         },
         {
           title: "Settings",
-          url: "#",
+          url: "/test",
         },
       ],
     },
@@ -144,12 +144,12 @@ const data = {
   projects: [
     {
       name: "Design Engineering",
-      url: "#",
+      url: "/test",
       icon: Frame,
     },
     {
       name: "Sales & Marketing",
-      url: "#",
+      url: "/detail",
       icon: PieChart,
     },
     {
