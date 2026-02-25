@@ -50,7 +50,7 @@ import {
           </Breadcrumb>
         </div>
       </header>
-      <div class="px-4 mx-auto max-w-[800px]">
+      <div class="px-4 mx-auto w-full max-w-[800px]">
         <router-view />
       </div>
     </SidebarInset>

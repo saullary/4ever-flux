@@ -4,8 +4,8 @@ import aiPrompt from "./ai-prompt.vue";
 </script>
 
 <template>
-  <div>
-    <div class="py-4">
+  <div class="">
+    <div class="py-4 min-h-[70vh]">
       <ai-msg></ai-msg>
     </div>
     <div class="sticky bottom-0 bg-background z-10">
