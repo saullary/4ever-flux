@@ -29,6 +29,7 @@ import {
 } from "lucide-vue-next";
 import { nanoid } from "nanoid";
 import { ref } from "vue";
+import atxt from "./a.md?raw";
 
 interface Version {
   id: string;
@@ -71,55 +72,7 @@ const messages: MessageType[] = [
     versions: [
       {
         id: nanoid(),
-        content: `# Vue Composition API Guide
-
-The Vue Composition API is a set of functions that let you use Vue’s reactivity and lifecycle features inside the \`setup()\` function of your components. Here's what you need to know:
-
-## Core Composables
-
-### ref()
-Creates reactive primitive values:
-
-\`\`\`vue
-<script setup>
-import { ref } from 'vue'
-
-const count = ref(0)
-<\/script>
-
-<template>
-  <button @click="count++">Count: {{ count }}</button>
-</template>
-\`\`\`
-
-### watch()
-Runs side effects when reactive values change:
-
-\`\`\`vue
-<script setup>
-import { ref, watch } from 'vue'
-
-const count = ref(0)
-
-watch(count, (newVal, oldVal) => {
-  console.log(\`Count changed from \${oldVal} to \${newVal}\`)
-})
-<\/script>
-\`\`\`
-
-## When to Use the Composition API
-
-- ✅ **For complex logic** — Easier to organize and reuse reactive state
-- ✅ **For reusable code** — Create your own composables (like custom hooks)
-- ✅ **For TypeScript support** — More type-friendly than Options API
-- ❌ **For simple components** — The Options API might be enough
-
-## Rules of the Composition API
-
-1. Only use Vue composables **inside \`setup()\`** or other composables
-2. Always return what you want to use in your template from \`setup()\`
-
-Would you like to explore more advanced composables like \`computed\` or \`onMounted\`?`,
+        content: atxt,
       },
       {
         id: nanoid(),
